@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="feed_bg">#bdbdbd</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="username_bg">#ffa000</color>  
+        <color name="swipe_color_1">#5677fc</color>   
+    <color name="swipe_color_2">#ffffff</color>   
+    <color name="swipe_color_3">#ffa000</color> 
+    <color name="swipe_color_4">#5677fc</color>   
+</resources>

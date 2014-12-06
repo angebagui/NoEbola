@@ -1,0 +1,65 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.angbeny.android.noebola"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+    
+    <permission android:name="com.angbeny.android.noebola.PRIVATE"
+    android:protectionLevel="signature" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.angbeny.android.noebola.PRIVATE"/>
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+         android:description="@string/noebola_descr" android:logo="@drawable/ic_launcher">
+        <activity 
+            android:name="NoEbolaActivity"
+            android:launchMode="singleTop"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".SetPreference" />
+                <activity android:label="@string/app_name" android:name="Splash"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver 
+            android:name="com.angbeny.android.noebola.receiver.NetworkChangeReceiver" 
+            android:enabled="true"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+            </intent-filter>
+        </receiver>
+            <service android:name="com.angbeny.android.noebola.service.PollService" />
+    <receiver android:name="com.angbeny.android.noebola.receiver.StartupReceiver">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+      </intent-filter>
+    </receiver>
+    <receiver android:name="com.angbeny.android.noebola.receiver.NotificationReceiver"
+      android:exported="false">
+      <intent-filter
+        android:priority="-999">
+        <action android:name="com.angbeny.android.noebola.SHOW_NOTIFICATION" />
+      </intent-filter>
+    </receiver>
+    <activity android:name="DescriptioActivity"></activity>
+    </application>
+
+</manifest>

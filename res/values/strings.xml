@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">NoEbola</string>
+    <string name="item_refresh">Refresh</string>
+    <string name="tweets_title">Last Tweets</string>
+    <string name="user_picture">User picture</string>
+    <string name="feed_picture">Feed picture</string>
+	<string name="send_info">Share info</string>
+	<string name="tweet_text">Stop Ebola, in Africa! Pray the Lord to help us</string>
+	<string name="tweet_link">http://www.google.com</string>
+    <string name="start_polling">Start Notification</string>
+    <string name="stop_polling">Stop Notification</string>
+    <string name="new_tweets_title">NoEbola </string>
+    <string name="new_tweets_text">Recent tweets about Ebola </string>
+    <string name="message">Via NoEbola : %s</string>
+    <string name="pref_title">Receive Notification</string>
+    <string name="pref_summ">you will receive some notification about tweets</string>
+    <string name="network_info">No internet connection</string>
+    <string name="noebola_descr">For several months now, the media around the world tells us that Ebola. People are worried and lack of concrete information from that information is managed by the usual media. NoEbola then just meet this need by providing information in real time. Even as you have not opened NoEbola, you receive notifications every 5 minutes on the latest information. What makes NoEbola different from other applications? NoEbola recovers latest public Tweet with the hashtag Ebola (#Ebola) into a news timeline on Ebola. Users then have the posibility to share this information through SMS, Facebook, Google+, Gmail, Twitter.</string>
+    <string name="author">Designed By Ange Bagui</string>
+    <string name="lord">Thank You Lord</string>
+    <string name="about_us">About us</string>
+
+</resources>
