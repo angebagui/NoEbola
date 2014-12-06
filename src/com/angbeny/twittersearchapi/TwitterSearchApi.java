@@ -35,8 +35,8 @@ import android.util.Log;
 
 public class TwitterSearchApi {
 	private static final String TAG ="TwitterSearchApi";
-	private static final String API_KEY = "VnHwS1DJexbE1zROmmepaLTxi";
-	private static final String API_SECRET ="mA4ggZ5ekJokFksiYCMoTWbuhamdRuyYshaHZ6inhiYpwLUzNU";
+	private static final String API_KEY = "add_your_api_key"; 
+	private static final String API_SECRET ="add_your_api_secret";
 	
 	//ENDPOINT
 	private static final String ENDPOINT="https://api.twitter.com/1.1/search/tweets.json";
